@@ -1,0 +1,40 @@
+{
+    "title": "Git Command",
+    "name": "git-command",
+    "version": "1.0.0",
+    "description": "Git is a awesome tool for controlling version in software industry. Every time after changing codes it needs to save and record. For this git commands are necessary must. This is a public used most common and git command data table for using easily.",
+    "keywords": [
+        "git","git-command","push","pull"
+    ],
+    "homepage": "https://github.com/arif98741/git-command",
+    "bugs": {
+        "url": "https://github.com/arif98741/git-command/issues",
+        "email": "arif98741@gmail.com"
+    },
+    "license": "MIT",
+    "author": "Ariful Isalm",
+    "contributors": [
+        //"David Miller (http://davidmiller.io/)"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/arif98741/git-command"
+    },
+    "dependencies": {
+        "bootstrap": "4.1.1",
+        "font-awesome": "4.7.0",
+        "jquery": "3.3.1",
+        "jquery.easing": "^1.4.1",
+        "magnific-popup": "^1.1.0"
+    },
+    "devDependencies": {
+        "browser-sync": "2.24.3",
+        "gulp": "^3.9.1",
+        "gulp-clean-css": "3.9.4",
+        "gulp-filter": "5.1.0",
+        "gulp-header": "2.0.5",
+        "gulp-rename": "^1.2.2",
+        "gulp-sass": "4.0.1",
+        "gulp-uglify": "3.0.0"
+    }
+}

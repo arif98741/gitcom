@@ -1,6 +1,6 @@
 {
   "name": "git-command",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Git is a awesome tool for controlling version in software industry. Every time after changing codes it needs to save and record. ",
   "main": "gulpfile.js",
   "scripts": {

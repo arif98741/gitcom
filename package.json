@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/arif98741/git-command.git"
+    "url": "git+https://github.com/arif98741/gitcom.git"
   },
   "keywords": [
     "git",
@@ -20,9 +20,9 @@
   "author": "Ariful Islam",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/arif98741/git-command/issues"
+    "url": "https://github.com/arif98741/gitcom/issues"
   },
-  "homepage": "https://github.com/arif98741/git-command#readme",
+  "homepage": "https://github.com/arif98741/gitcom#readme",
   "dependencies": {
     "bootstrap": "^4.1.1",
     "datatables.net": "^1.10.19",

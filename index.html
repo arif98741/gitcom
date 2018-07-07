@@ -11,23 +11,33 @@
     <title>Freelancer - Start Bootstrap Theme</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
     <!-- Plugin CSS -->
-    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
+    <link href="node_modules/magnific-popup/dist/magnific-popup.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
 
     <!-- Custom styles for this template -->
     <link href="css/freelancer.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
     <style>
       table{
-        color: #000;
-        margin: 0px;
-      }
+      width: 100%;
+      border-collapse: collapse;
+      border: 1px solid #000;
+    }
+    tr,th,td{
+      border: 1px solid #000;
+      text-align: left;
+    }
+    #dataserial{
+      text-align: center;
+    }
     </style>
 
   </head>
@@ -35,9 +45,9 @@
   <body id="page-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+    <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" >
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">GIT COMMANDS</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">GIT COMMAND</a>
         <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -45,7 +55,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a>
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Issues</a>
             </li>
             <li class="nav-item mx-0 mx-lg-1">
               <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
@@ -53,29 +63,70 @@
             <li class="nav-item mx-0 mx-lg-1">
               <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a>
             </li>
+
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="https://github.com/arif98741/git-command/" target="_blank">Github</a>
+            </li>
+
+
           </ul>
         </div>
       </div>
     </nav>
 
     <!-- Header -->
-    <header class="masthead text-white text-center">
+    
       <div class="container">
         
-        
-        <table>
-          <tbody>
-            <thead>
+       <div class="main-content">
+         <h3>Git Basic Command List</h3>
+         <table width="100%" id="gittable">
+           <thead>
+             <tr>
+               <th>Serial</th>
+               <th>Git Command</th>
+               <th>Description</th>
+               <th>Tags</th>
+             </tr>
+           </thead>
+           <tbody>
+             <tr>
+               <td id="dataserial">1</td>
+               <td>git init</td>
+               <td>Initialize git repository in a folder</td>
+               <td>init,start git,open git</td>
+             </tr>
               <tr>
-                <th>Serial</th>
-              </tr>
-            </thead>
-          </tbody>
-        </table>
-        
+               <td id="dataserial">2</td>
+               <td>git status</td>
+               <td>Information about changed/deleted files</td>
+               <td>status,condition,changes,modify</td>
+             </tr>
+              <tr>
+               <td id="dataserial">3</td>
+               <td>git add file.txt</td>
+               <td>Add specific file for commit</td>
+               <td>add, fixed, specific, custom file</td>
+             </tr>
+              <tr>
+               <td id="dataserial">4</td>
+               <td>git add &nbsp; .</td>
+               <td>Add all changed file for commit</td>
+               <td>add, all, every file, changed</td>
+             </tr>
+              <tr>
+               <td id="dataserial">5</td>
+               <td>git commit -m "commit message"</td>
+               <td>Initialize git repository in a folder</td>
+               <td>init,start git,open git</td>
+             </tr>
+
+           </tbody>
+         </table>
+       </div>
        
       </div>
-    </header>
+    
 
 
     <!-- Footer -->
@@ -83,43 +134,29 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4 mb-5 mb-lg-0">
-            <h4 class="text-uppercase mb-4">Location</h4>
-            <p class="lead mb-0">2215 John Daniel Drive
-              <br>Clark, MO 65243</p>
+            <h4 class="text-uppercase mb-4">About</h4>
+            <p class="lead mb-0">Ariful Islam
+              <br>Dhaka, Bangladesh</p>
           </div>
           <div class="col-md-4 mb-5 mb-lg-0">
-            <h4 class="text-uppercase mb-4">Around the Web</h4>
+            <h4 class="text-uppercase mb-4">Important Links</h4>
             <ul class="list-inline mb-0">
               <li class="list-inline-item">
-                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
+                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https//facebook.com/arifulislammmc007">
                   <i class="fa fa-fw fa-facebook"></i>
                 </a>
               </li>
               <li class="list-inline-item">
                 <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                  <i class="fa fa-fw fa-google-plus"></i>
+                  <i class="fa fa-fw fa-github"></i>
                 </a>
               </li>
-              <li class="list-inline-item">
-                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                  <i class="fa fa-fw fa-twitter"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                  <i class="fa fa-fw fa-linkedin"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                  <i class="fa fa-fw fa-dribbble"></i>
-                </a>
-              </li>
+              
             </ul>
           </div>
           <div class="col-md-4">
-            <h4 class="text-uppercase mb-4">About Freelancer</h4>
-            <p class="lead mb-0">Freelance is a free to use, open source Bootstrap theme created by
+            <h4 class="text-uppercase mb-4">Documentation</h4>
+            <p class="lead mb-0">Git command is free and open source git commands list site that is open source and run under MIT license. Read more .......
               <a href="http://startbootstrap.com">GIT COMMANDS</a>.</p>
           </div>
         </div>
@@ -128,7 +165,8 @@
 
     <div class="copyright py-4 text-center text-white">
       <div class="container">
-        <small>Copyright &copy; Your Website 2018</small>
+        <small id="portfolio">This Project is Under MIT License. </small>
+        <small>You are free to use, modify or distribute</small>
       </div>
     </div>
 
@@ -136,6 +174,7 @@
     <div class="scroll-to-top d-lg-none position-fixed ">
       <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
         <i class="fa fa-chevron-up"></i>
+        hi
       </a>
     </div>
 
@@ -146,20 +185,32 @@
    
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-
+    <script src="node_modules/jquery.easing/jquery.easing.min.js"></script>
+    <script src="node_modules/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
     <!-- Contact Form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
     <script src="js/contact_me.js"></script>
 
     <!-- Custom scripts for this template -->
     <script src="js/freelancer.min.js"></script>
-
+    <script>
+      $(document).ready( function () {
+       $('#gittable').DataTable({
+        'lengthChange': true,
+        'paging'      : true,
+        'ordering'    : true,
+        'info'        : true,
+        'autoWidth'   : false,
+        'pageLength'  : 20
+       });
+      } );
+    </script>
+   
   </body>
 
 </html>

@@ -1,6 +1,6 @@
 {
   "name": "gitcom",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Git is a awesome tool for controlling version in software industry. Every time after changing codes it needs to save and record. ",
   "main": "index.html",
   "scripts": {

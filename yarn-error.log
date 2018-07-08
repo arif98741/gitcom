@@ -1,0 +1,70 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\Ariful Islam\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js login
+
+PATH: 
+  C:\Users\Ariful Islam\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Ariful Islam\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files\Git\cmd;C:\Program Files\nodejs;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\Git LFS;C:\Users\Ariful Islam\AppData\Local\Microsoft\WindowsApps;C:\Users\Ariful Islam\AppData\Roaming\npm;C:\Users\Ariful Islam\AppData\Roaming\Composer\vendor\bin;C:\Program Files\Microsoft VS Code\bin;C:\Users\Ariful Islam\Downloads\Programs\g95\bin;C:\Program Files (x86)\CodeBlocks\MinGW\bin\bin;C:\Program Files\heroku\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  9.8.0
+
+Platform: 
+  win32 x64
+
+npm manifest: 
+  {
+    "name": "gitcom",
+    "version": "1.0.5",
+    "description": "Git is a awesome tool for controlling version in software industry. Every time after changing codes it needs to save and record. ",
+    "main": "index.html",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/arif98741/gitcom.git"
+    },
+    "keywords": [
+      "git",
+      "git",
+      "command",
+      "push",
+      "pull"
+    ],
+    "author": "Ariful Islam",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/arif98741/gitcom/issues"
+    },
+    "homepage": "https://github.com/arif98741/gitcom#readme",
+    "dependencies": {
+      "bootstrap": "^4.1.1",
+      "datatables.net": "^1.10.19",
+      "datatables.net-dt": "^1.10.19",
+      "font-awesome": "^4.7.0",
+      "jquery": "^3.1.1",
+      "jquery.easing": "^1.4.1",
+      "magnific-popup": "^1.1.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: Can't answer a question unless a user TTY
+      at ConsoleReporter.question (C:\Users\Ariful Islam\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:92962:59)
+      at C:\Users\Ariful Islam\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:35916:33
+      at Generator.next (<anonymous>)
+      at step (C:\Users\Ariful Islam\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:98:30)
+      at C:\Users\Ariful Islam\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:116:14
+      at new Promise (<anonymous>)
+      at new F (C:\Users\Ariful Islam\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:23451:28)
+      at C:\Users\Ariful Islam\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:95:12
+      at getCredentials (C:\Users\Ariful Islam\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:35937:17)
+      at Object.<anonymous> (C:\Users\Ariful Islam\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:36037:11)

@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Freelancer - Start Bootstrap Theme</title>
+    <title>Gitcom - Open Source Git Command List</title>
 
     <!-- Bootstrap core CSS -->
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -58,7 +58,7 @@
               <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Issues</a>
             </li>
             <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#push">About</a>
             </li>
             <li class="nav-item mx-0 mx-lg-1">
               <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a>
@@ -83,10 +83,10 @@
          <table width="100%" id="gittable">
            <thead>
              <tr>
-               <th>Serial</th>
-               <th>Git Command</th>
-               <th>Description</th>
-               <th>Tags</th>
+               <th width="10">Serial</th>
+               <th width="35">Git Command</th>
+               <th width="35%">Description</th>
+               <th width="20%">Tags</th>
              </tr>
            </thead>
            <tbody>
@@ -102,6 +102,55 @@
                <td>Information about changed/deleted files</td>
                <td>status,condition,changes,modify</td>
              </tr>
+
+            <tr>
+               <td id="dataserial">2</td>
+               <td>git config username.name="Jhon"</td>
+               <td>Config git user for the current git</td>
+               <td>git, config, user,name</td>
+             </tr>
+
+              <tr>
+               <td id="dataserial">2</td>
+               <td>git config username.email="jhon@gmail.com"</td>
+               <td>Config git email for the current git</td>
+               <td>git, config, user,email</td>
+             </tr>
+
+
+
+               <tr>
+               <td id="dataserial">2</td>
+               <td>git config --global username.name="Jhon"</td>
+               <td>Config git user for the current git globally in a machine</td>
+               <td>setup,config, globally, user,name</td>
+             </tr>
+
+              <tr>
+               <td id="dataserial">2</td>
+               <td>git config --global username.email="jd@gmail.com"</td>
+               <td>Config git email for the current git globally in a machine</td>
+               <td>setup,config, globally, user,email</td>
+             </tr>
+
+             <tr>
+               <td id="dataserial">2</td>
+               <td>git remote add origin https://github.com/arif98741/gitcom</td>
+               <td>Config remote connection for uploading files and data to the repository(such as github, gitlab, bitbucket, sourceforge)</td>
+               <td>setup,origin,remote,server,repo</td>
+             </tr>
+
+             <tr>
+               <td id="dataserial">2</td>
+               <td>git -v</td>
+               <td>Current installed git version</td>
+               <td>git,version,show</td>
+             </tr>
+
+
+
+
+
               <tr>
                <td id="dataserial">3</td>
                <td>git add file.txt</td>
@@ -114,12 +163,126 @@
                <td>Add all changed file for commit</td>
                <td>add, all, every file, changed</td>
              </tr>
-              <tr>
-               <td id="dataserial">5</td>
+            <tr>
+              <td id="dataserial">5</td>
                <td>git commit -m "commit message"</td>
-               <td>Initialize git repository in a folder</td>
-               <td>init,start git,open git</td>
+               <td>Commit Changes with messages and information</td>
+               <td>commit, change, -m</td>
              </tr>
+
+             <tr>
+              <td id="dataserial">5</td>
+               <td>git branch</td>
+               <td>See all branch list</td>
+               <td>branch, list, local</td>
+             </tr>
+
+
+
+             <tr>
+              <td id="dataserial">6</td>
+               <td title="">git branch branch_name</td>
+               <td>Create new branch locally</td>
+               <td>branch, change, make, create</td>
+             </tr>
+
+             <tr>
+              <td id="dataserial">7</td>
+               <td>git checkout -b branch_name</td>
+               <td>Create new branch and move to there</td>
+               <td>create, move, branch, checkout</td>
+             </tr>
+
+              <tr>
+              <td id="dataserial">6</td>
+               <td title="">
+                git checkout -b branch_name <br>
+                git push origin branch_name 
+              </td>
+               <td>Create new branch locally and push it to origin</td>
+               <td>branch, change, make, create</td>
+             </tr>
+
+
+             <tr>
+              <td id="dataserial">8</td>
+               <td title="for migrating to any branch use git checkout branch_name">git checkout dev</td>
+               <td title="here dev is a custom branch for example purpose">Migrate from any branch to dev</td>
+               <td>create, move, branch, checkout</td>
+             </tr>
+
+            <tr>
+              <td id="dataserial">9</td>
+               <td >git pull </td>
+               <td>update local branch by fetching data from remote origin</td>
+               <td>pull, update,remote ,origin</td>
+            </tr>
+            <tr>
+              <td id="dataserial">9</td>
+               <td >git tag </td>
+               <td>Show all local tag list</td>
+               <td>tag, list, all, tags</td>
+            </tr>
+
+            
+
+            <tr>
+              <td id="dataserial">9</td>
+               <td >git ls-remote --tags origin</td>
+               <td>Show all remote tag list</td>
+               <td>tag, list,remote, origin, all, tags</td>
+            </tr>
+
+            <tr>
+              <td id="dataserial">9</td>
+               <td >git tag tag_name</td>
+               <td>Create a new tag locally</td>
+               <td>tag, create, new, local</td>
+            </tr>
+
+            <tr>
+              <td id="dataserial">9</td>
+               <td >git tag tag_name -a<br>git push origin --tags</td>
+               <td>Create a local tag and upload to origin</td>
+               <td>origin, tag, remote</td>
+            </tr>
+
+            <tr>
+              <td id="dataserial">9</td>
+               <td >git push --tags</td>
+               <td>Push all tags to the remote</td>
+               <td>push, tag, all, --tags</td>
+            </tr>
+
+
+
+             <tr id="push">
+              <td id="dataserial">9</td>
+               <td >git tag tag_name -a</td>
+               <td>Create a new tag with nesscessary description</td>
+               <td>-a, tag,create, make</td>
+            </tr>
+
+            <tr>
+              <td id="dataserial">9</td>
+               <td >git tag -d tag_name</td>
+               <td>Delete local tag</td>
+               <td>tag,delete,clear, local</td>
+            </tr>
+
+             <tr>
+              <td id="dataserial">9</td>
+               <td >git push origin :tagname<br>git push --delete origin tagname</td>
+               <td>Delete remote tag</td>
+               <td>tag, delete, push, origin</td>
+            </tr>
+
+            <tr>
+              <td id="dataserial">9</td>
+               <td >git fetch --tags</td>
+               <td>Fetch and update local tags from remote origin</td>
+               <td>tag,fetch,remote,origin</td>
+            </tr>
 
            </tbody>
          </table>
@@ -157,7 +320,7 @@
           <div class="col-md-4">
             <h4 class="text-uppercase mb-4">Documentation</h4>
             <p class="lead mb-0">Git command is free and open source git commands list site that is open source and run under MIT license. Read more .......
-              <a href="http://startbootstrap.com">GIT COMMANDS</a>.</p>
+              <a href="#">GIT COMMANDS</a>.</p>
           </div>
         </div>
       </div>
@@ -206,7 +369,7 @@
         'ordering'    : true,
         'info'        : true,
         'autoWidth'   : false,
-        'pageLength'  : 20
+        'pageLength'  : 50
        });
       } );
     </script>

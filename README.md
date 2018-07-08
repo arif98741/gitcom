@@ -5,5 +5,4 @@ to install gitcom use below command in npm(be sure that you have installed npm i
 ##<pre>npm i gitcom</pre><br>
 
 you can also install gitcom by yarn package 
-
-##<pre>$ yarn add gitcom</pre><br>
+<pre>$ yarn add gitcom</pre><br>

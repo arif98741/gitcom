@@ -1,6 +1,6 @@
 {
   "name": "gitcom",
-  "version": "1.0.9",
+  "version": "1.1.1",
   "description": "Git is a awesome tool for controlling version in software industry. Every time after changing codes it needs to save and record. ",
   "main": "index.html",
   "scripts": {
@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/arif98741/gitcom#readme",
   "dependencies": {
-    "bootstrap": "^4.1.1",
+    "bootstrap": "4.1.2",
     "datatables.net": "^1.10.19",
     "datatables.net-dt": "^1.10.19",
     "font-awesome": "^4.7.0",

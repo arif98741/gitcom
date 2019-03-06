@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/arif98741/gitcom#readme",
   "dependencies": {
-    "bootstrap": "4.1.2",
+    "bootstrap": "4.3.1",
     "datatables.net": "^1.10.19",
     "datatables.net-dt": "^1.10.19",
     "font-awesome": "^4.7.0",

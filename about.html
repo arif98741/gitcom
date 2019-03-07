@@ -97,12 +97,12 @@
      
       
       <div class="main-content">
-        <p style="color: #000; font-size: 20px;" ><span style="font-size: 30px;">W</span>elcome to <strong>Gitcom</strong>. It is open source platform for getting and using git command list. Simply search on below datatable's search box. You will get your expected command. The concept of making <strong>Gitcon</strong> was generated during working on several projects by mine. Usully a developer has to modify code continuously and save track of every changes he/she made.  <br>
+        <p style="color: #000; font-size: 20px; display: none;" id="welcomemessage"><span style="font-size: 30px;">W</span>elcome to <strong>Gitcom</strong>. It is open source platform for getting and using git command list. Simply search on below datatable's search box. You will get your expected command. The concept of making <strong>Gitcon</strong> was generated during working on several projects by mine. Usully a developer has to modify code continuously and save track of every changes he/she made.  <br>
         I sometimes forget some git commands which is so much boring and time consuming also. For solving this issue I set up mind to save all the commands in a table. Saving command list in a docx or text file is so much boring and it takes more than 10seconds to open docx file. That's why I simply design a datatable using bootstrap and jquery datatable. That's all. <br>
         For helping other guy I uploaded it to <i class="fa fa-github"></i>&nbsp; Github so that every novice or pro developer can easily see and find all kinds of command by writing two/three characters. 
          To know something or request any feature just to <a href="https://github.com/arif98741/gitcom/issues" target="_blank">here...</a></p>
         
-        <p style="margin-top: 30px; font-weight: 700">I think helping people is always bring blessing. I always try to do that. I mainly work on <i>PHP</i>, <i>Laravel</i>, <i>Codeigniter</i>, <i>API</i>. If you need any kind of help, You can feel free to contact with me.</p>
+        <p style="margin-top: 30px; font-weight: 700; display: none" id="welcomemessageend">I think helping people is always bring blessing. I always try to do that. I mainly work on <i>PHP</i>, <i>Laravel</i>, <i>Codeigniter</i>, <i>API</i>. If you need any kind of help, You can feel free to contact with me.</p>
 
     </div>
     
@@ -196,7 +196,17 @@
     setTimeout(function(){
 
        $('#welcomemessage').slideDown(800);
+     }, 450);
+
+    setTimeout(function(){
+
+       $('#welcomemessageend').slideDown(800);
      }, 600);
+
+
+
+
+
     function digi() {
       var date = new Date(),
           hour = date.getHours(),

@@ -13,7 +13,7 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
   <!-- Plugin CSS -->
-  <!-- <link href="node_modules/magnific-popup/dist/magnific-popup.css" rel="stylesheet" type="text/css"> -->
+  <link href="node_modules/magnific-popup/dist/magnific-popup.css" rel="stylesheet" type="text/css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css" />
   <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.semanticui.min.css">
@@ -120,8 +120,72 @@
           </tr>
         </thead>
         <tbody>
-          <!-- 
-
+          <tr>
+            <td >1</td>
+            <td>git init</td>
+            <td>Initialize git repository in a folder</td>
+            <td>init,start git,open git</td>
+          </tr>
+          <tr>
+            <td >2</td>
+            <td id="gitconfig">git status</td>
+            <td>Information about changed/deleted files</td>
+            <td>status,condition,changes,modify</td>
+          </tr>
+          <tr>
+            <td >3</td>
+            <td >git config username.name Jhon</td>
+            <td>Config git user for the current git</td>
+            <td>git, config, user,name</td>
+          </tr>
+          <tr>
+            <td >4</td>
+            <td>git config username.email jhon@gmail.com</td>
+            <td>Config git email for the current git</td>
+            <td>git, config, user,email</td>
+          </tr>
+          <tr>
+            <td >5</td>
+            <td>git config --global username.name Jhon</td>
+            <td>Config git user for the current git globally in a machine</td>
+            <td>setup,config, globally, user,name</td>
+          </tr>
+          <tr>
+            <td >6</td>
+            <td>git config --global username.email jd@gmail.com</td>
+            <td>Config git email for the current git globally in a machine</td>
+            <td>setup,config, globally, user,email</td>
+          </tr>
+          <tr>
+            <td >7</td>
+            <td style="font-size: 13px;">git remote add origin https://github.com/arif98741/gitcom</td>
+            <td>Config remote connection for uploading files and data to the repository(such as github, gitlab, bitbucket, sourceforge)</td>
+            <td>setup,origin,remote,server,repo</td>
+          </tr>
+          <tr>
+            <td >8</td>
+            <td>git -v</td>
+            <td>Current installed git version</td>
+            <td>git,version,show</td>
+          </tr>
+          <tr>
+            <td >9</td>
+            <td >git add file.txt</td>
+            <td>Add specific file for commit</td>
+            <td>add, fixed, specific, custom file</td>
+          </tr>
+          <tr>
+            <td >10</td>
+            <td>git add &nbsp; .</td>
+            <td>Add all changed file for commit</td>
+            <td>add, all, every file, changed</td>
+          </tr>
+          <tr>
+            <td >11</td>
+            <td>git commit -m "commit message"</td>
+            <td>Commit Changes with messages and information</td>
+            <td>commit, change, -m</td>
+          </tr>
           <tr>
             <td >12</td>
             <td id="gitbranch">git branch</td>
@@ -353,9 +417,10 @@
           <td>Remove all files from git cache</td>
           <td>cache,all,remove,files</td>
         </tr>
-      -->
+
+
+
       </tbody>
-       
     </table>
   </div>
 
@@ -431,13 +496,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
     <!-- Plugin JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script> -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
     <!-- Contact Form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
     <script src="js/contact_me.js"></script>
     <!-- Custom scripts for this template -->
-    <!-- <script src="js/freelancer.min.js"></script> -->
+    <script src="js/freelancer.min.js"></script>
     <script>
       $(document).ready( function () {
         $('#gittable').DataTable({
@@ -450,22 +515,7 @@
         });
 
         $("input[type=search]").attr('placeholder','Search git command here...');
-
-        /*json parsing*/
-        $.getJSON( "https://raw.githubusercontent.com/arif98741/gitcom/master/git_commands.json", function( data ) {
-          var items = [];
-          console.log(data);
-          $.each( data, function( key, val ) {
-            items.push( "<li id='" + key + "'>" + val + "</li>" );
-          });
-          console.log(items); return false;
-         
-          // $( "<ul/>", {
-          //   "class": "my-new-list",
-          //   html: items.join( "" )
-          // }).appendTo( "body" );
-        });
-      });
+      } );
     </script>
 
     <script>

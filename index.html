@@ -13,7 +13,7 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
   <!-- Plugin CSS -->
-  <link href="node_modules/magnific-popup/dist/magnific-popup.css" rel="stylesheet" type="text/css">
+  <!-- <link href="node_modules/magnific-popup/dist/magnific-popup.css" rel="stylesheet" type="text/css"> -->
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css" />
   <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.semanticui.min.css">
@@ -120,6 +120,8 @@
           </tr>
         </thead>
         <tbody>
+          <!-- 
+
           <tr>
             <td >1</td>
             <td>git init</td>
@@ -417,10 +419,9 @@
           <td>Remove all files from git cache</td>
           <td>cache,all,remove,files</td>
         </tr>
-
-
-
+      -->
       </tbody>
+       
     </table>
   </div>
 
@@ -496,13 +497,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
     <!-- Plugin JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script> -->
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
     <!-- Contact Form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
     <script src="js/contact_me.js"></script>
     <!-- Custom scripts for this template -->
-    <script src="js/freelancer.min.js"></script>
+    <!-- <script src="js/freelancer.min.js"></script> -->
     <script>
       $(document).ready( function () {
         $('#gittable').DataTable({
@@ -515,7 +516,21 @@
         });
 
         $("input[type=search]").attr('placeholder','Search git command here...');
-      } );
+
+        /*json parsing*/
+        $.getJSON( "git_commands.json", function( data ) {
+          var items = [];
+          console.log(data);
+          // $.each( data, function( key, val ) {
+          //   items.push( "<li id='" + key + "'>" + val + "</li>" );
+          // });
+         
+          // $( "<ul/>", {
+          //   "class": "my-new-list",
+          //   html: items.join( "" )
+          // }).appendTo( "body" );
+        });
+      });
     </script>
 
     <script>

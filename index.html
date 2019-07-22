@@ -122,67 +122,7 @@
         <tbody>
           <!-- 
 
-          <tr>
-            <td >1</td>
-            <td>git init</td>
-            <td>Initialize git repository in a folder</td>
-            <td>init,start git,open git</td>
-          </tr>
-          <tr>
-            <td >2</td>
-            <td id="gitconfig">git status</td>
-            <td>Information about changed/deleted files</td>
-            <td>status,condition,changes,modify</td>
-          </tr>
-          <tr>
-            <td >3</td>
-            <td >git config username.name Jhon</td>
-            <td>Config git user for the current git</td>
-            <td>git, config, user,name</td>
-          </tr>
-          <tr>
-            <td >4</td>
-            <td>git config username.email jhon@gmail.com</td>
-            <td>Config git email for the current git</td>
-            <td>git, config, user,email</td>
-          </tr>
-          <tr>
-            <td >5</td>
-            <td>git config --global username.name Jhon</td>
-            <td>Config git user for the current git globally in a machine</td>
-            <td>setup,config, globally, user,name</td>
-          </tr>
-          <tr>
-            <td >6</td>
-            <td>git config --global username.email jd@gmail.com</td>
-            <td>Config git email for the current git globally in a machine</td>
-            <td>setup,config, globally, user,email</td>
-          </tr>
-          <tr>
-            <td >7</td>
-            <td style="font-size: 13px;">git remote add origin https://github.com/arif98741/gitcom</td>
-            <td>Config remote connection for uploading files and data to the repository(such as github, gitlab, bitbucket, sourceforge)</td>
-            <td>setup,origin,remote,server,repo</td>
-          </tr>
-          <tr>
-            <td >8</td>
-            <td>git -v</td>
-            <td>Current installed git version</td>
-            <td>git,version,show</td>
-          </tr>
-          <tr>
-            <td >9</td>
-            <td >git add file.txt</td>
-            <td>Add specific file for commit</td>
-            <td>add, fixed, specific, custom file</td>
-          </tr>
-          <tr>
-            <td >10</td>
-            <td>git add &nbsp; .</td>
-            <td>Add all changed file for commit</td>
-            <td>add, all, every file, changed</td>
-          </tr>
-          <tr>
+          
             <td >11</td>
             <td>git commit -m "commit message"</td>
             <td>Commit Changes with messages and information</td>
@@ -518,12 +458,13 @@
         $("input[type=search]").attr('placeholder','Search git command here...');
 
         /*json parsing*/
-        $.getJSON( "git_commands.json", function( data ) {
+        $.getJSON( "https://raw.githubusercontent.com/arif98741/gitcom/master/git_commands.json", function( data ) {
           var items = [];
           console.log(data);
-          // $.each( data, function( key, val ) {
-          //   items.push( "<li id='" + key + "'>" + val + "</li>" );
-          // });
+          $.each( data, function( key, val ) {
+            items.push( "<li id='" + key + "'>" + val + "</li>" );
+          });
+          console.log(items); return false;
          
           // $( "<ul/>", {
           //   "class": "my-new-list",

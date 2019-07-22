@@ -1,57 +1,57 @@
 {
-  "command"	: "git init",
-  "comment"	: "Beady little eyes",
-  "tag"		: "init,start git,open git"
+  "command" : "git init",
+  "comment" : "Beady little eyes",
+  "tag"   : "init,start git,open git"
 },
 {
-  "command"	: "git status",
-  "comment"	: "Information about changed/deleted files",
-  "tag"		: "status,condition,changes,modify"
+  "command" : "git status",
+  "comment" : "Information about changed/deleted files",
+  "tag"   : "status,condition,changes,modify"
 },
 {
-  "command"	: "git config username.name Jhon",
-  "comment"	: "Config git user for the current git",
-  "tag"		: "git, config, user,name"
+  "command" : "git config username.name Jhon",
+  "comment" : "Config git user for the current git",
+  "tag"   : "git, config, user,name"
 },
 {
-  "command"	: "git config username.email jhon@gmail.com",
-  "comment"	: "Config git email for the current git",
-  "tag"		: "git, config, user,email"
+  "command" : "git config username.email jhon@gmail.com",
+  "comment" : "Config git email for the current git",
+  "tag"   : "git, config, user,email"
 },
 {
-  "command"	: "git config --global username.name Jhon",
-  "comment"	: "Config git email for the current git",
-  "tag"		: "git, config, user,esetup,config, globally, user,name"
+  "command" : "git config --global username.name Jhon",
+  "comment" : "Config git email for the current git",
+  "tag"   : "git, config, user,esetup,config, globally, user,name"
 },
 {
-  "command"	: "git config --global username.email jd@gmail.com",
-  "comment"	: "Config git email for the current git globally in a machine",
-  "tag"		: "setup,config, globally, user,email"
+  "command" : "git config --global username.email jd@gmail.com",
+  "comment" : "Config git email for the current git globally in a machine",
+  "tag"   : "setup,config, globally, user,email"
 },
 {
-  "command"	: "git remote add origin https://github.com/arif98741/gitcom",
-  "comment"	: "Config remote connection for uploading files and data to the repository(such as github, gitlab, bitbucket, sourceforge)",
-  "tag"		: "setup,origin,remote,server,repo"
+  "command" : "git remote add origin https://github.com/arif98741/gitcom",
+  "comment" : "Config remote connection for uploading files and data to the repository(such as github, gitlab, bitbucket, sourceforge)",
+  "tag"   : "setup,origin,remote,server,repo"
 },
 {
-  "command"	: "git -v",
-  "comment"	: "Current installed git version",
-  "tag"		: "git,version,show"
+  "command" : "git -v",
+  "comment" : "Current installed git version",
+  "tag"   : "git,version,show"
 },
 {
-  "command"	: "git add file.txt",
-  "comment"	: "Add specific file for commit",
-  "tag"		: "add, fixed, specific, custom file"
+  "command" : "git add file.txt",
+  "comment" : "Add specific file for commit",
+  "tag"   : "add, fixed, specific, custom file"
 },
 {
-  "command"	: "git add &nbsp; .",
-  "comment"	: "Add all changed file for commit",
-  "tag"		: "add, all, every file, changed"
+  "command" : "git add &nbsp; .",
+  "comment" : "Add all changed file for commit",
+  "tag"   : "add, all, every file, changed"
 },
 {
-  "command"	: "git commit -m commit_message",
-  "comment"	: "Commit Changes with messages and information",
-  "tag"		: "commit, change, -m"
+  "command" : "git commit -m commit_message",
+  "comment" : "Commit Changes with messages and information",
+  "tag"   : "commit, change, -m"
 },
 
 

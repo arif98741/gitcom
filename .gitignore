@@ -1,1 +1,6 @@
-
+*.log
+*.iml
+*.zip
+.idea
+vendor
+.vscode
